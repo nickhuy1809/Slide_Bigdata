@@ -1,14 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidMiner &amp; FineReport — HCMUS Seminar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RapidMiner &amp; FineReport — HCMUS Seminar</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         /* ===========================================
            === CSS RESET & HCMUS THEME TOKENS ===
            Single place to tune the academic presentation system.
@@ -812,906 +812,866 @@
     </style>
 </head>
 <body>
-    <div class="edit-hotzone" aria-hidden="true"></div>
-    <button class="edit-toggle" id="editToggle" title="Bật chế độ chỉnh sửa (E)">✏️ Chỉnh sửa</button>
-    <button class="save-toggle" id="saveToggle" title="Lưu HTML hiện tại (Ctrl+S)">💾 Lưu HTML</button>
-    <div class="editor-toast" id="editorToast" aria-live="polite"></div>
-
-    <div class="deck-viewport">
-        <main class="deck-stage" id="deckStage">
-
-            <!-- ===========================================
+<div aria-hidden="true" class="edit-hotzone"></div>
+<button class="edit-toggle" id="editToggle" title="Bật chế độ chỉnh sửa (E)">✏️ Chỉnh sửa</button>
+<button class="save-toggle" id="saveToggle" title="Lưu HTML hiện tại (Ctrl+S)">💾 Lưu HTML</button>
+<div aria-live="polite" class="editor-toast" id="editorToast"></div>
+<div class="deck-viewport">
+<main class="deck-stage" id="deckStage">
+<!-- ===========================================
                  === SLIDE 1 (Index 1): Mở đầu
                  =========================================== -->
-            <section class="slide active visible" data-title="Mở đầu">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-title" src="assets/logo-title.png" alt="HCMUS logo">
-                <div class="slide-inner title-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 240px 180px 150px 180px; width: 100%; box-sizing: border-box; text-align: center;">
-                    <p class="eyebrow reveal delay-1" data-editable="true">CSC14005 — Nhập môn Dữ liệu lớn</p>
-                    <h1 class="hero-title reveal delay-2" data-editable="true" style="margin-bottom: 28px; text-align: center;">RapidMiner &amp; FineReport trong hệ sinh thái Big Data và Enterprise Analytics</h1>
-                    <div class="hero-band reveal delay-3" style="display: flex; justify-content: center; align-items: center; width: 100%; grid-template-columns: none; margin: 20px auto 0;">
-                        <div class="card hero-meta" style="width: 820px; max-width: 90%; margin: 0 auto; text-align: center; padding: 28px 40px; box-sizing: border-box;">
-                            <p class="body-text" data-editable="true" style="font-size: 21px; font-weight: 700; color: var(--hcmus-orange); margin-bottom: 14px; text-align: center;">Lớp: 23KHDL1 — Nhóm: 4Ever</p>
-                            <div class="body-text" data-editable="true" style="font-size: 18px; line-height: 1.8; color: #333; text-align: center;">
-                                <strong style="font-size: 19px;">Thành viên:</strong><br>
-                                Cao Tấn Hoàng Huy - 23127051 &nbsp;&nbsp;•&nbsp;&nbsp; Nguyễn Hữu Anh Trí - 23127130<br>
-                                Trần Hoài Thiện Nhân - 23127238 &nbsp;&nbsp;•&nbsp;&nbsp; Đỗ Đăng Nhật Tiến - 23127269
+<section class="slide active visible" data-title="Mở đầu">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-title" src="assets/logo-title.png"/>
+<div class="slide-inner title-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 240px 180px 150px 180px; width: 100%; box-sizing: border-box; text-align: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">CSC14005 — Nhập môn Dữ liệu lớn</p>
+<h1 class="hero-title reveal delay-2" data-editable="true" style="margin-bottom: 28px; text-align: center;">RapidMiner &amp; FineReport trong hệ sinh thái Big Data và Enterprise Analytics</h1>
+<div class="hero-band reveal delay-3" style="display: flex; justify-content: center; align-items: center; width: 100%; grid-template-columns: none; margin: 20px auto 0;">
+<div class="card hero-meta" style="width: 820px; max-width: 90%; margin: 0 auto; text-align: center; padding: 28px 40px; box-sizing: border-box;">
+<p class="body-text" data-editable="true" style="font-size: 21px; font-weight: 700; color: var(--hcmus-orange); margin-bottom: 14px; text-align: center;">Lớp: 23KHDL1 — Nhóm: 4Ever</p>
+<div class="body-text" data-editable="true" style="font-size: 18px; line-height: 1.8; color: #333; text-align: center;">
+<strong style="font-size: 19px;">Thành viên:</strong><br/>
+                                Cao Tấn Hoàng Huy - 23127051   •   Nguyễn Hữu Anh Trí - 23127130<br/>
+                                Trần Hoài Thiện Nhân - 23127238   •   Đỗ Đăng Nhật Tiến - 23127269
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-note">HCMUS Seminar</div>
-                <div class="slide-number">01</div>
-            </section>
-
-            <!-- ===========================================
+</div>
+</div>
+</div>
+<div class="footer-note">HCMUS Seminar</div>
+<div class="slide-number">01</div>
+</section>
+<!-- ===========================================
                  === SLIDE 2 (Main 2): Mục lục
                  =========================================== -->
-            <section class="slide" data-title="Mục lục">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">01 / Mục lục trình bày</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Bố cục nội dung được chia thành 4 phần chính</h2>
-                <div class="content-grid grid-4 reveal delay-3">
-                <article class="card"><div class="badge">I</div><h3 data-editable="true">Phần I · Tổng quan</h3><p class="body-text" data-editable="true">Bối cảnh chủ đề, so sánh giữa 2 sản phẩm và cách nhìn tích hợp hai sản phẩm.</p></article>
-                <article class="card"><div class="badge">II</div><h3 data-editable="true">Phần II · RapidMiner</h3><p class="body-text" data-editable="true">Lịch sử, AI Studio, AI Hub, hệ sinh thái Altair và khả năng triển khai MLOps.</p></article>
-                <article class="card"><div class="badge">III</div><h3 data-editable="true">Phần III · FineReport</h3><p class="body-text" data-editable="true">Báo cáo dạng lưới, dashboard, data entry, phân quyền và định hướng BI + AI.</p></article>
-                <article class="card"><div class="badge">IV</div><h3 data-editable="true">Phần IV · So sánh &amp; kết luận</h3><p class="body-text" data-editable="true">Nguyên tắc chọn công cụ và kết luận chung của nhóm.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Mục lục</div>
-                <div class="slide-number">02</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Mục lục">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png">
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png">
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">01 / Mục lục trình bày</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Bố cục nội dung được chia thành 4 phần chính</h2>
+<div class="content-grid grid-4 reveal delay-3">
+<article class="card"><div class="badge">I</div><h3 data-editable="true">Phần I · Tổng quan</h3><p class="body-text" data-editable="true">Bối cảnh chủ đề, so sánh giữa 2 sản phẩm và cách nhìn tích hợp hai sản phẩm.</p></article>
+<article class="card"><div class="badge">II</div><h3 data-editable="true">Phần II · RapidMiner</h3><p class="body-text" data-editable="true">Lịch sử, AI Studio, AI Hub, hệ sinh thái Altair và khả năng triển khai MLOps.</p></article>
+<article class="card"><div class="badge">III</div><h3 data-editable="true">Phần III · FineReport</h3><p class="body-text" data-editable="true">Báo cáo dạng lưới, dashboard, data entry, phân quyền và định hướng BI + AI.</p></article>
+<article class="card"><div class="badge">IV</div><h3 data-editable="true">Phần IV · So sánh &amp; kết luận</h3><p class="body-text" data-editable="true">Nguyên tắc chọn công cụ và kết luận chung của nhóm.</p></article>
+</div>
+</div>
+<div class="footer-note">Table of Contents</div>
+<div class="slide-number">02</div>
+</img></img></img></img></section>
+<!-- ===========================================
                  === SLIDE 3 (Main 3): Bối cảnh
                  =========================================== -->
-            <section class="slide" data-title="Bối cảnh chủ đề">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần I / Vì sao cần so sánh?</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Trong Big Data, dữ liệu chỉ có giá trị khi đi trọn đường từ xử lý đến ra quyết định</h2>
-                <div class="callout-row reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Góc nhìn hệ thống</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Một lớp công cụ mạnh ở xử lý, mô hình hóa và tự động hóa pipeline dữ liệu.</li>
-                <li data-editable="true">Một lớp công cụ mạnh ở báo cáo, dashboard, phân phối insight và tương tác người dùng.</li>
-                <li data-editable="true">Doanh nghiệp thực tế thường cần cả hai lớp này thay vì chỉ một công cụ đơn lẻ.</li>
-                </ul>
-                </article>
-                <article class="quote-box">
-                <p data-editable="true">RapidMiner trả lời câu hỏi “làm thế nào để biến dữ liệu thô thành tri thức?”, còn FineReport trả lời “làm thế nào để tri thức đó đến được đúng người, đúng lúc, đúng ngữ cảnh?”.</p>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">Bối cảnh</div>
-                <div class="slide-number">03</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Bối cảnh chủ đề">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần I / Vì sao cần so sánh?</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Trong Big Data, dữ liệu chỉ có giá trị khi đi trọn đường từ xử lý đến ra quyết định</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Góc nhìn hệ thống</div>
+<ul class="bullet-list">
+<li data-editable="true">Một lớp công cụ mạnh ở xử lý, mô hình hóa và tự động hóa pipeline dữ liệu.</li>
+<li data-editable="true">Một lớp công cụ mạnh ở báo cáo, dashboard, phân phối insight và tương tác người dùng.</li>
+<li data-editable="true">Doanh nghiệp thực tế thường cần cả hai lớp này thay vì chỉ một công cụ đơn lẻ.</li>
+</ul>
+</article>
+<article class="quote-box">
+<p data-editable="true">RapidMiner trả lời câu hỏi “làm thế nào để biến dữ liệu thô thành tri thức?”, còn FineReport trả lời “làm thế nào để tri thức đó đến được đúng người, đúng lúc, đúng ngữ cảnh?”.</p>
+</article>
+</div>
+</div>
+<div class="footer-note">Background &amp; Context</div>
+<div class="slide-number">03</div>
+</section>
+<!-- ===========================================
                  === SLIDE 4 (Main 4): So sánh
                  =========================================== -->
-            <section class="slide" data-title="So sánh nhanh">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần I / So sánh</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Hai sản phẩm đều cùng là low-code / no-code giải quyết vấn đề với dữ liệu nhưng phục vụ cho mục đích khác nhau</h2>
-                <div class="comparison-banner reveal delay-3">
-                <div class="comparison-side">
-                <h3 data-editable="true">RapidMiner</h3>
-                <ul class="bullet-list">
-                <li data-editable="true">MLOps, Data Mining, Predictive Analytics, AutoML.</li>
-                <li data-editable="true">Tổ chức công việc theo pipeline / workflow xử lý.</li>
-                <li data-editable="true">Thiên về data scientist, analyst và AI engineer.</li>
-                </ul>
-                </div>
-                <div class="comparison-vs">VS</div>
-                <div class="comparison-side">
-                <h3 data-editable="true">FineReport</h3>
-                <ul class="bullet-list">
-                <li data-editable="true">Enterprise reporting, dashboard, data entry.</li>
-                <li data-editable="true">Tổ chức công việc theo report, dashboard và portal phân quyền.</li>
-                <li data-editable="true">Thiên về BI team, đội ngũ marketing và BA.</li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                <div class="footer-note">So sánh</div>
-                <div class="slide-number">04</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="So sánh nhanh">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần I / So sánh</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Hai sản phẩm đều cùng là low-code / no-code giải quyết vấn đề với dữ liệu nhưng phục vụ cho mục đích khác nhau</h2>
+<div class="comparison-banner reveal delay-3">
+<div class="comparison-side">
+<h3 data-editable="true">RapidMiner</h3>
+<ul class="bullet-list">
+<li data-editable="true">MLOps, Data Mining, Predictive Analytics, AutoML.</li>
+<li data-editable="true">Tổ chức công việc theo pipeline / workflow xử lý.</li>
+<li data-editable="true">Thiên về data scientist, analyst và AI engineer.</li>
+</ul>
+</div>
+<div class="comparison-vs">VS</div>
+<div class="comparison-side">
+<h3 data-editable="true">FineReport</h3>
+<ul class="bullet-list">
+<li data-editable="true">Enterprise reporting, dashboard, data entry.</li>
+<li data-editable="true">Tổ chức công việc theo report, dashboard và portal phân quyền.</li>
+<li data-editable="true">Thiên về BI team, đội ngũ marketing và BA.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-note">Quick Comparison</div>
+<div class="slide-number">04</div>
+</section>
+<!-- ===========================================
                  === SLIDE 5 (Main 5): Phần RapidMiner
                  =========================================== -->
-            <section class="slide" data-title="Phần RapidMiner">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner section-inner">
-                <div class="section-line reveal delay-1"></div>
-                <div class="section-chip reveal delay-2">Phần II / RapidMiner</div>
-                <p class="lead subtle reveal delay-4" data-editable="true">Nội dung phần này tập trung vào vai trò, lịch sử phát triển, hệ sinh thái Altair và kiến trúc AI Studio / AI Hub.</p>
-                </div>
-                <div class="footer-note">RapidMiner chapter</div>
-                <div class="slide-number">05</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Phần RapidMiner">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner section-inner">
+<div class="section-line reveal delay-1"></div>
+<div class="section-chip reveal delay-2">Phần II / RapidMiner</div>
+<p class="lead subtle reveal delay-4" data-editable="true">Nội dung phần này tập trung vào vai trò, lịch sử phát triển, hệ sinh thái Altair và kiến trúc AI Studio / AI Hub.</p>
+</div>
+<div class="footer-note">RapidMiner Section</div>
+<div class="slide-number">05</div>
+</section>
+<!-- ===========================================
                  === SLIDE 6 (Main 6): Lịch sử
                  =========================================== -->
-            <section class="slide" data-title="RapidMiner 2001-nay">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Lịch sử hình thành</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">2001 - nay: từ dự án YALE tại đại học đến sản phẩm thương mại hóa</h2>
-                <div class="timeline reveal delay-3">
-                <article class="card timeline-card"><p class="timeline-year" data-editable="true">2001</p><h3 data-editable="true">YALE khởi động</h3><p class="timeline-copy" data-editable="true">Dự án mã nguồn mở tại TU Dortmund, phục vụ thử nghiệm thuật toán Data Mining.</p></article>
-                <article class="card timeline-card"><p class="timeline-year" data-editable="true">2006</p><h3 data-editable="true">Đổi tên RapidMiner</h3><p class="timeline-copy" data-editable="true">Tên mới phản ánh định hướng tối ưu hóa và mở rộng phân tích dữ liệu.</p></article>
-                <article class="card timeline-card"><p class="timeline-year" data-editable="true">2013</p><h3 data-editable="true">RapidMiner Inc.</h3><p class="timeline-copy" data-editable="true">Tái cấu trúc, chuyển trụ sở sang Boston để tăng tốc vốn hóa và phát triển thị trường Mỹ.</p></article>
-                <article class="card timeline-card"><p class="timeline-year" data-editable="true">2022–2024</p><h3 data-editable="true">Gia nhập Altair</h3><p class="timeline-copy" data-editable="true">Tái định vị dưới thương hiệu Altair RapidMiner và tích hợp sâu với các sản phẩm Altair khác.</p></article>
-                <article class="card timeline-card"><p class="timeline-year" data-editable="true">2025–nay</p><h3 data-editable="true">Một phần của Siemens</h3><p class="timeline-copy" data-editable="true">Được đưa vào Siemens Xcelerator, mở rộng vai trò trong chuyển đổi số công nghiệp.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Lịch sử hình thành</div>
-                <div class="slide-number">06</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="RapidMiner 2001-nay">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Lịch sử hình thành</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">2001 - nay: từ dự án YALE tại đại học đến sản phẩm thương mại hóa</h2>
+<div class="timeline reveal delay-3">
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2001</p><h3 data-editable="true">YALE khởi động</h3><p class="timeline-copy" data-editable="true">Dự án mã nguồn mở tại TU Dortmund, phục vụ thử nghiệm thuật toán Data Mining.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2006</p><h3 data-editable="true">Đổi tên RapidMiner</h3><p class="timeline-copy" data-editable="true">Tên mới phản ánh định hướng tối ưu hóa và mở rộng phân tích dữ liệu.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2013</p><h3 data-editable="true">RapidMiner Inc.</h3><p class="timeline-copy" data-editable="true">Tái cấu trúc, chuyển trụ sở sang Boston để tăng tốc vốn hóa và phát triển thị trường Mỹ.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2022–2024</p><h3 data-editable="true">Gia nhập Altair</h3><p class="timeline-copy" data-editable="true">Tái định vị dưới thương hiệu Altair RapidMiner và tích hợp sâu với các sản phẩm Altair khác.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2025–nay</p><h3 data-editable="true">Một phần của Siemens</h3><p class="timeline-copy" data-editable="true">Được đưa vào Siemens Xcelerator, mở rộng vai trò trong chuyển đổi số công nghiệp.</p></article>
+</div>
+</div>
+<div class="footer-note">RapidMiner History</div>
+<div class="slide-number">06</div>
+</section>
+<!-- ===========================================
                  === SLIDE 7 (Main 7): Hệ sinh thái Altair
                  =========================================== -->
-            <section class="slide" data-title="Hệ sinh thái Altair">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; text-align: left;">
-                <p class="eyebrow reveal delay-1" data-editable="true">Hệ sinh thái Altair</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true" style="max-width: 80%;">RapidMiner không đứng một mình mà nằm trong một dải công cụ phục vụ nhiều lớp bài toán dữ liệu</h2>
-                <img alt="Altair Products Ecosystem" src="assets/Products_rapidminer.png" style="width: 80%; height: auto; margin-top: 20px; align-self: center;"/>
-                </div>
-                <div class="footer-note">Altair ecosystem</div>
-                <div class="slide-number">07</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Hệ sinh thái Altair">
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; text-align: left;">
+<p class="eyebrow reveal delay-1" data-editable="true">Hệ sinh thái Altair</p>
+<h2 class="slide-title reveal delay-2" data-editable="true" style="max-width: 80%;">RapidMiner không đứng một mình mà nằm trong một dải công cụ phục vụ nhiều lớp bài toán dữ liệu</h2>
+<img alt="Altair Products Ecosystem" src="assets/Products_rapidminer.png" style="width: 80%; height: auto; margin-top: 20px; align-self: center;"/>
+</div>
+<div class="footer-note">Altair Ecosystem</div>
+<div class="slide-number">07</div>
+</section>
+<!-- ===========================================
                  === SLIDE 8 (Main 8): Meme Break
                  =========================================== -->
-            <section class="slide" data-title="Meme Break">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
-                <img alt="Data Science Meme" src="https://i.imgflip.com/aygr34.jpg" style="width: 70%; height: auto; object-fit: contain;"/>
-                </div>
-                <div class="slide-number">08</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Meme Break">
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+<img alt="Data Science Meme" src="https://i.imgflip.com/aygr34.jpg" style="width: 70%; height: auto; object-fit: contain;"/>
+</div>
+<div class="slide-number">08</div>
+<div class="footer-note">Break Time</div></section>
+<!-- ===========================================
                  === SLIDE 9 (Main 9): AI Hub
                  =========================================== -->
-            <section class="slide" data-title="AI Hub">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / AI Hub</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Altair AI Hub là nền tảng máy chủ trung tâm để triển khai, quản lý và tự động hóa ML/AI</h2>
-                <div class="callout-row reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Triết lý thiết kế</div>
-                <ul class="bullet-list">
-                <li data-editable="true"><strong>AI for Teams &amp; Collaboration:</strong> Kết nối Data Scientist, Data Engineer, Analyst, xóa bỏ rào cản giữa Code-first và No-code/Low-code.</li>
-                <li data-editable="true"><strong>Enterprise Scalability &amp; Governance:</strong> Tái sử dụng &amp; Tối ưu (dữ liệu, workflows, kết nối, mô hình), chuyển giao an toàn từ Sandbox → Production.</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Vai trò cốt lõi</div>
-                <ul class="bullet-list">
-                <li data-editable="true"><strong>Schedules &amp; Job Queues:</strong> Quản lý tính toán nặng trên server hiệu năng cao.</li>
-                <li data-editable="true"><strong>Project &amp; Version Control:</strong> Quản lý phiên bản workflow với Git + RBAC.</li>
-                <li data-editable="true"><strong>Deployment &amp; Web APIs:</strong> Triển khai mô hình thành RESTful endpoints.</li>
-                <li data-editable="true"><strong>Dashboards:</strong> Tích hợp Panopticon cho real-time monitoring.</li>
-                </ul>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">AI Hub</div>
-                <div class="slide-number">09</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="AI Hub">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / AI Hub</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Altair AI Hub là nền tảng máy chủ trung tâm để triển khai, quản lý và tự động hóa ML/AI</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Triết lý thiết kế</div>
+<ul class="bullet-list">
+<li data-editable="true"><strong>AI for Teams &amp; Collaboration:</strong> Kết nối Data Scientist, Data Engineer, Analyst, xóa bỏ rào cản giữa Code-first và No-code/Low-code.</li>
+<li data-editable="true"><strong>Enterprise Scalability &amp; Governance:</strong> Tái sử dụng &amp; Tối ưu (dữ liệu, workflows, kết nối, mô hình), chuyển giao an toàn từ Sandbox → Production.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Vai trò cốt lõi</div>
+<ul class="bullet-list">
+<li data-editable="true"><strong>Schedules &amp; Job Queues:</strong> Quản lý tính toán nặng trên server hiệu năng cao.</li>
+<li data-editable="true"><strong>Project &amp; Version Control:</strong> Quản lý phiên bản workflow với Git + RBAC.</li>
+<li data-editable="true"><strong>Deployment &amp; Web APIs:</strong> Triển khai mô hình thành RESTful endpoints.</li>
+<li data-editable="true"><strong>Dashboards:</strong> Tích hợp Panopticon cho real-time monitoring.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">AI Hub Overview</div>
+<div class="slide-number">09</div>
+</section>
+<!-- ===========================================
                  === SLIDE 10 (Main 10): Kiến trúc AI Hub
                  =========================================== -->
-            <section class="slide" data-title="Kiến trúc AI Hub">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center;">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / Kiến trúc</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Cấu trúc và các thành phần chính của AI Hub</h2>
-                <img alt="AI Hub Architecture" src="assets/server-architecture.png" style="width: 85%; height: auto; margin-top: 20px;"/>
-                </div>
-                <div class="footer-note">AI Hub Architecture</div>
-                <div class="slide-number">10</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kiến trúc AI Hub">
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / Kiến trúc</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Cấu trúc và các thành phần chính của AI Hub</h2>
+<img alt="AI Hub Architecture" src="assets/server-architecture.png" style="width: 85%; height: auto; margin-top: 20px;"/>
+</div>
+<div class="footer-note">AI Hub Architecture</div>
+<div class="slide-number">10</div>
+</section>
+<!-- ===========================================
                  === SLIDE 11 (Main 11): License
                  =========================================== -->
-            <section class="slide" data-title="License">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / License</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Các loại giấy phép và mô hình triển khai AI Hub</h2>
-                <div class="callout-row reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Mô hình BYOL (Bring Your Own License)</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Mua giấy phép Altair Units từ Altair hoặc đại lý authorized reseller.</li>
-                <li data-editable="true">Cài đặt AI Hub trực tiếp trên On-Premise, Private Cloud hoặc AWS/Azure.</li>
-                <li data-editable="true">Quản lý full: hạ tầng, dữ liệu và quyền phép hành tác.</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Mô hình Cloud PAYG (Pay-As-You-Go)</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Không cần mua License trước, chỉ trả theo giờ sử dụng.</li>
-                <li data-editable="true">Khác dộng VM trên AWS/Azure và tắt khi không cần.</li>
-                <li data-editable="true">Ideal cho tổ chức muốn flexibility và không còn phí upfront.</li>
-                </ul>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">License</div>
-                <div class="slide-number">11</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="License">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / License</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Các loại giấy phép và mô hình triển khai AI Hub</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Mô hình BYOL (Bring Your Own License)</div>
+<ul class="bullet-list">
+<li data-editable="true">Mua giấy phép Altair Units từ Altair hoặc đại lý authorized reseller.</li>
+<li data-editable="true">Cài đặt AI Hub trực tiếp trên On-Premise, Private Cloud hoặc AWS/Azure.</li>
+<li data-editable="true">Quản lý full: hạ tầng, dữ liệu và quyền phép hành tác.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Mô hình Cloud PAYG (Pay-As-You-Go)</div>
+<ul class="bullet-list">
+<li data-editable="true">Không cần mua License trước, chỉ trả theo giờ sử dụng.</li>
+<li data-editable="true">Khác dộng VM trên AWS/Azure và tắt khi không cần.</li>
+<li data-editable="true">Ideal cho tổ chức muốn flexibility và không còn phí upfront.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">AI Hub Licensing</div>
+<div class="slide-number">11</div>
+</section>
+<!-- ===========================================
                  === SLIDE 12 (Main 12): AI Studio
                  =========================================== -->
-            <section class="slide" data-title="AI Studio">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / AI Studio</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Altair RapidMiner AI Studio là IDE chuyên dụng cho khoa học dữ liệu và học máy</h2>
-                <div class="callout-row reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Vai trò cốt lõi</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Data Mining, MLOps, Predictive Analytics, AutoML.</li>
-                <li data-editable="true">Visual workflow giúp tổ chức luồng xử lý rõ ràng và tái sử dụng được.</li>
-                <li data-editable="true">Bao phủ toàn bộ vòng đời từ xử lý dữ liệu đến đóng gói mô hình.</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Triết lý thiết kế</div>
-                <p class="body-text" data-editable="true">RapidMiner theo mô hình "code-optional": người dùng mới có thể kéo-thả, còn người dùng nâng cao vẫn tích hợp Python, R hoặc custom operator khi cần.</p>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">AI Studio</div>
-                <div class="slide-number">12</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="AI Studio">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / AI Studio</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Altair RapidMiner AI Studio là IDE chuyên dụng cho khoa học dữ liệu và học máy</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Vai trò cốt lõi</div>
+<ul class="bullet-list">
+<li data-editable="true">Data Mining, MLOps, Predictive Analytics, AutoML.</li>
+<li data-editable="true">Visual workflow giúp tổ chức luồng xử lý rõ ràng và tái sử dụng được.</li>
+<li data-editable="true">Bao phủ toàn bộ vòng đời từ xử lý dữ liệu đến đóng gói mô hình.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Triết lý thiết kế</div>
+<p class="body-text" data-editable="true">RapidMiner theo mô hình "code-optional": người dùng mới có thể kéo-thả, còn người dùng nâng cao vẫn tích hợp Python, R hoặc custom operator khi cần.</p>
+</article>
+</div>
+</div>
+<div class="footer-note">AI Studio Overview</div>
+<div class="slide-number">12</div>
+</section>
+<!-- ===========================================
                  === SLIDE 13 (Main 13): Cách thức vận hành
                  =========================================== -->
-            <section class="slide" data-title="Cách thức vận hành AI Studio">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center;">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / Vận hành</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Cách thức AI Studio vận hành từ đầu vào đến đầu ra</h2>
-                <img alt="AI Studio Architecture" src="assets/architecture-ai-studio.png" style="width: 85%; height: auto; margin-top: 20px;"/>
-                </div>
-                <div class="footer-note">AI Studio Operation</div>
-                <div class="slide-number">13</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Cách thức vận hành AI Studio">
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / Vận hành</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Cách thức AI Studio vận hành từ đầu vào đến đầu ra</h2>
+<img alt="AI Studio Architecture" src="assets/architecture-ai-studio.png" style="width: 85%; height: auto; margin-top: 20px;"/>
+</div>
+<div class="footer-note">AI Studio Operation</div>
+<div class="slide-number">13</div>
+</section>
+<!-- ===========================================
                  === SLIDE 14 (Main 14): Kiến trúc DAG
                  =========================================== -->
-            <section class="slide" data-title="Kiến trúc DAG">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Kiến trúc DAG</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">RapidMiner vận hành trên đồ thị có hướng không chu trình (DAG)</h2>
-                <div class="flow-row reveal delay-3">
-                <article class="card card-tight flow-card"><h4 data-editable="true">Nguồn dữ liệu</h4><p data-editable="true">CSV, Excel, SQL, NoSQL, cloud storage và nguồn file lớn.</p></article>
-                <article class="card card-tight flow-card"><h4 data-editable="true">Operators</h4><p data-editable="true">Mỗi node là một đơn vị xử lý: đọc, lọc, biến đổi, train, score.</p></article>
-                <article class="card card-tight flow-card"><h4 data-editable="true">Ports</h4><p data-editable="true">Cổng vào / ra quyết định cách dữ liệu, model và metrics chảy qua quy trình.</p></article>
-                <article class="card card-tight flow-card"><h4 data-editable="true">Acyclic</h4><p data-editable="true">Không cho phép vòng lặp vô tận, giúp engine phân tích phụ thuộc và tối ưu hơn.</p></article>
-                <article class="card card-tight flow-card"><h4 data-editable="true">.rmp XML</h4><p data-editable="true">Toàn bộ workflow được lưu thành cấu hình chuẩn, thuận tiện chia sẻ và versioning.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">DAG workflow</div>
-                <div class="slide-number">14</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kiến trúc DAG">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Kiến trúc DAG</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">RapidMiner vận hành trên đồ thị có hướng không chu trình (DAG)</h2>
+<div class="flow-row reveal delay-3">
+<article class="card card-tight flow-card"><h4 data-editable="true">Nguồn dữ liệu</h4><p data-editable="true">CSV, Excel, SQL, NoSQL, cloud storage và nguồn file lớn.</p></article>
+<article class="card card-tight flow-card"><h4 data-editable="true">Operators</h4><p data-editable="true">Mỗi node là một đơn vị xử lý: đọc, lọc, biến đổi, train, score.</p></article>
+<article class="card card-tight flow-card"><h4 data-editable="true">Ports</h4><p data-editable="true">Cổng vào / ra quyết định cách dữ liệu, model và metrics chảy qua quy trình.</p></article>
+<article class="card card-tight flow-card"><h4 data-editable="true">Acyclic</h4><p data-editable="true">Không cho phép vòng lặp vô tận, giúp engine phân tích phụ thuộc và tối ưu hơn.</p></article>
+<article class="card card-tight flow-card"><h4 data-editable="true">.rmp XML</h4><p data-editable="true">Toàn bộ workflow được lưu thành cấu hình chuẩn, thuận tiện chia sẻ và versioning.</p></article>
+</div>
+</div>
+<div class="footer-note">DAG Architecture</div>
+<div class="slide-number">14</div>
+</section>
+<!-- ===========================================
                  === SLIDE 15 (Main 15): ExampleSet & metadata
                  =========================================== -->
-            <section class="slide" data-title="ExampleSet &amp; metadata">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Dữ liệu trung tâm</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">ExampleSet và Metadata Propagation là hai chìa khóa giúp RapidMiner “thông minh trước khi chạy”</h2>
-                <div class="content-grid grid-2 reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">ExampleSet</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Tương đương DataFrame nhưng được tối ưu cho machine learning.</li>
-                <li data-editable="true">Tách rõ Regular Attributes và Special Roles như label, prediction, id, weight.</li>
-                <li data-editable="true">Giúp workflow hiểu rõ dữ liệu ở cấp ngữ nghĩa chứ không chỉ ở cấp bảng.</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Metadata Propagation</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Lan truyền kiểu dữ liệu, tên cột, missing values qua từng operator.</li>
-                <li data-editable="true">Nếu kiểu dữ liệu không khớp, lỗi xuất hiện ngay trên giao diện trước lúc Run.</li>
-                <li data-editable="true">Điểm mạnh này giảm lỗi thiết kế logic rất sớm trong quá trình làm việc.</li>
-                </ul>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">Core data model</div>
-                <div class="slide-number">15</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="ExampleSet &amp; metadata">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Dữ liệu trung tâm</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">ExampleSet và Metadata Propagation là hai chìa khóa giúp RapidMiner “thông minh trước khi chạy”</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">ExampleSet</div>
+<ul class="bullet-list">
+<li data-editable="true">Tương đương DataFrame nhưng được tối ưu cho machine learning.</li>
+<li data-editable="true">Tách rõ Regular Attributes và Special Roles như label, prediction, id, weight.</li>
+<li data-editable="true">Giúp workflow hiểu rõ dữ liệu ở cấp ngữ nghĩa chứ không chỉ ở cấp bảng.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Metadata Propagation</div>
+<ul class="bullet-list">
+<li data-editable="true">Lan truyền kiểu dữ liệu, tên cột, missing values qua từng operator.</li>
+<li data-editable="true">Nếu kiểu dữ liệu không khớp, lỗi xuất hiện ngay trên giao diện trước lúc Run.</li>
+<li data-editable="true">Điểm mạnh này giảm lỗi thiết kế logic rất sớm trong quá trình làm việc.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">Core Data Model</div>
+<div class="slide-number">15</div>
+</section>
+<!-- ===========================================
                  === SLIDE 16 (Main 16): Demo
                  =========================================== -->
-            <section class="slide" data-title="Demo &amp; Walkthrough">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / Demo ứng dụng</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Walkthrough ứng dụng thực tế với RapidMiner AI Studio</h2>
-                <video controls="" height="auto" style="margin-top: 40px; max-height: 600px; border-radius: 12px;" width="80%">
-                <source src="assets/SeminarRapidminer (online-video-cutter.com).mp4" type="video/mp4"/>
+<section class="slide" data-title="Demo &amp; Walkthrough">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / Demo ứng dụng</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Walkthrough ứng dụng thực tế với RapidMiner AI Studio</h2>
+<video controls="" height="auto" style="margin-top: 40px; max-height: 600px; border-radius: 12px;" width="80%">
+<source src="assets/SeminarRapidminer (online-video-cutter.com).mp4" type="video/mp4"/>
                                         Trình duyệt của bạn không hỗ trợ video HTML5.
                                     </video>
-                </div>
-                <div class="footer-note">Demo walkthrough</div>
-                <div class="slide-number">16</div>
-            </section>
-
-            <!-- ===========================================
+</div>
+<div class="footer-note">Demo Walkthrough</div>
+<div class="slide-number">16</div>
+</section>
+<!-- ===========================================
                  === SLIDE 17 (Main 17): License AI Studio
                  =========================================== -->
-            <section class="slide" data-title="License AI Studio">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / License</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Altair RapidMiner AI Studio sử dụng hệ thống bản quyền Altair Units</h2>
-                <div class="callout-row reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Educational License</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Miễn phí dành cho học sinh, sinh viên, giảng viên và nhà nghiên cứu.</li>
-                <li data-editable="true">Phục vụ mục đích học thuật (non-commercial).</li>
-                <li data-editable="true">Yêu cầu xác thực thành viên hỗ trợ học thuật (Đại học v.v.).</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Commercial License</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Dành cho doanh nghiệp và mở khóa toàn bộ giới hạn và tính năng xử lý.</li>
-                <li data-editable="true">Sử dụng Altair Units: đối tượng có thể chờ khắp nơi (remote).</li>
-                <li data-editable="true">Yêu cầu mức tối thiểu 20 Units / người dùng (từ $2,500-$3,000+/năm).</li>
-                </ul>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">AI Studio License</div>
-                <div class="slide-number">17</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="License AI Studio">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / License</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Altair RapidMiner AI Studio sử dụng hệ thống bản quyền Altair Units</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Educational License</div>
+<ul class="bullet-list">
+<li data-editable="true">Miễn phí dành cho học sinh, sinh viên, giảng viên và nhà nghiên cứu.</li>
+<li data-editable="true">Phục vụ mục đích học thuật (non-commercial).</li>
+<li data-editable="true">Yêu cầu xác thực thành viên hỗ trợ học thuật (Đại học v.v.).</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Commercial License</div>
+<ul class="bullet-list">
+<li data-editable="true">Dành cho doanh nghiệp và mở khóa toàn bộ giới hạn và tính năng xử lý.</li>
+<li data-editable="true">Sử dụng Altair Units: đối tượng có thể chờ khắp nơi (remote).</li>
+<li data-editable="true">Yêu cầu mức tối thiểu 20 Units / người dùng (từ $2,500-$3,000+/năm).</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">AI Studio Licensing</div>
+<div class="slide-number">17</div>
+</section>
+<!-- ===========================================
                  === SLIDE 18 (Main 18): Pricing
                  =========================================== -->
-            <section class="slide" data-title="Pricing">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần II / Giá cả</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Altair AI Studio - Mô hình giá cả Commercial License</h2>
-                <div class="content-grid grid-2 reveal delay-3">
-                <article class="card">
-                <div class="accent-pill">Annual Subscription Model</div>
-                <ul class="bullet-list">
-                <li data-editable="true">Giấy phép dựa trên <strong>Altair Units (AUs)</strong>.</li>
-                <li data-editable="true">Đơn giá: <strong>$125 – $150+</strong> / Unit / năm.</li>
-                <li data-editable="true">Yêu cầu tối thiểu: <strong>20 Units</strong> / người dùng.</li>
-                </ul>
-                </article>
-                <article class="card">
-                <div class="accent-pill">Chi phí dự kiến</div>
-                <ul class="bullet-list">
-                <li data-editable="true"><strong>Khởi điểm:</strong> $2,500 – $3,000+ / năm / người dùng.</li>
-                <li data-editable="true">Quản lý qua Altair One Cloud Portal.</li>
-                <li data-editable="true">Hỗ trợ kích hoạt linh hoạt (On-Premise / Cloud).</li>
-                </ul>
-                </article>
-                </div>
-                </div>
-                <div class="footer-note">Pricing</div>
-                <div class="slide-number">18</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Pricing">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần II / Giá cả</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Altair AI Studio - Mô hình giá cả Commercial License</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Annual Subscription Model</div>
+<ul class="bullet-list">
+<li data-editable="true">Giấy phép dựa trên <strong>Altair Units (AUs)</strong>.</li>
+<li data-editable="true">Đơn giá: <strong>$125 – $150+</strong> / Unit / năm.</li>
+<li data-editable="true">Yêu cầu tối thiểu: <strong>20 Units</strong> / người dùng.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Chi phí dự kiến</div>
+<ul class="bullet-list">
+<li data-editable="true"><strong>Khởi điểm:</strong> $2,500 – $3,000+ / năm / người dùng.</li>
+<li data-editable="true">Quản lý qua Altair One Cloud Portal.</li>
+<li data-editable="true">Hỗ trợ kích hoạt linh hoạt (On-Premise / Cloud).</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">Pricing Model</div>
+<div class="slide-number">18</div>
+</section>
+<!-- ===========================================
                  === SLIDE 19 (Index 22): Phần FineReport
                  =========================================== -->
-            <section class="slide" data-title="Phần FineReport">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner section-inner">
-                    <div class="section-line reveal delay-1"></div>
-                    <div class="section-chip reveal delay-2">Phần III / FineReport</div>
-                    <h2 class="hero-title reveal delay-3" data-editable="true">FineReport: nền tảng báo cáo, dashboard và data entry được tối ưu cho triển khai doanh nghiệp</h2>
-                    <p class="lead subtle reveal delay-4" data-editable="true">Nội dung phần này tập trung vào vị trí của FineReport, lịch sử FanRuan, hệ sinh thái sản phẩm và kiến trúc cốt lõi của nền tảng.</p>
-                </div>
-                <div class="footer-note">FineReport chapter</div>
-                <div class="slide-number">19</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Phần FineReport">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner section-inner">
+<div class="section-line reveal delay-1"></div>
+<div class="section-chip reveal delay-2">Phần III / FineReport</div>
+<h2 class="hero-title reveal delay-3" data-editable="true">FineReport: nền tảng báo cáo, dashboard và data entry được tối ưu cho triển khai doanh nghiệp</h2>
+<p class="lead subtle reveal delay-4" data-editable="true">Nội dung phần này tập trung vào vị trí của FineReport, lịch sử FanRuan, hệ sinh thái sản phẩm và kiến trúc cốt lõi của nền tảng.</p>
+</div>
+<div class="footer-note">FineReport Section</div>
+<div class="slide-number">19</div>
+</section>
+<!-- ===========================================
                  === SLIDE 20 (Index 23): FineReport tổng quan
                  =========================================== -->
-            <section class="slide" data-title="FineReport tổng quan">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">Phần III / FineReport là gì?</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">FineReport là công cụ lập báo cáo web cấp doanh nghiệp với trọng tâm là report design, dashboard và data entry</h2>
-                    <div class="callout-row reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Vai trò cốt lõi</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true">Thiết kế báo cáo phức tạp kiểu lưới, dashboard tương tác và biểu mẫu nhập liệu.</li>
-                                <li data-editable="true">Kết nối mạnh với nhiều nguồn dữ liệu, hỗ trợ phân quyền và triển khai rộng.</li>
-                                <li data-editable="true">Là tầng “presentation &amp; decision support” trong hệ dữ liệu doanh nghiệp.</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Triết lý thiết kế</div>
-                            <p class="body-text" data-editable="true">FineReport theo mô hình zero-code / codeless: giảm rào cản kỹ thuật cho người làm báo cáo nhưng vẫn đủ năng lực để phục vụ nhu cầu rất thực tế của doanh nghiệp.</p>
-                            <p class="micro-note" data-editable="true">Từ góc nhìn người dùng nghiệp vụ, đây là công cụ “đưa dữ liệu vào ngữ cảnh hành động”.</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport overview</div>
-                <div class="slide-number">20</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="FineReport tổng quan">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / FineReport là gì?</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">FineReport là công cụ lập báo cáo web cấp doanh nghiệp với trọng tâm là report design, dashboard và data entry</h2>
+<div class="callout-row reveal delay-3">
+<article class="card">
+<div class="accent-pill">Vai trò cốt lõi</div>
+<ul class="bullet-list">
+<li data-editable="true">Thiết kế báo cáo phức tạp kiểu lưới, dashboard tương tác và biểu mẫu nhập liệu.</li>
+<li data-editable="true">Kết nối mạnh với nhiều nguồn dữ liệu, hỗ trợ phân quyền và triển khai rộng.</li>
+<li data-editable="true">Là tầng “presentation &amp; decision support” trong hệ dữ liệu doanh nghiệp.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Triết lý thiết kế</div>
+<p class="body-text" data-editable="true">FineReport theo mô hình zero-code / codeless: giảm rào cản kỹ thuật cho người làm báo cáo nhưng vẫn đủ năng lực để phục vụ nhu cầu rất thực tế của doanh nghiệp.</p>
+<p class="micro-note" data-editable="true">Từ góc nhìn người dùng nghiệp vụ, đây là công cụ “đưa dữ liệu vào ngữ cảnh hành động”.</p>
+</article>
+</div>
+</div>
+<div class="footer-note">FineReport Overview</div>
+<div class="slide-number">20</div>
+</section>
+<!-- ===========================================
                  === SLIDE 21 (Index 24): FineReport 2006-2018
                  =========================================== -->
-            <section class="slide" data-title="FineReport 2006-2018">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">21 / Lịch sử giai đoạn đầu</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">2006–2018: FanRuan xây vị thế từ web reporting sang hệ sinh thái BI rộng hơn</h2>
-                    <div class="timeline reveal delay-3">
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2006</p><h3 data-editable="true">FanRuan thành lập</h3><p class="timeline-copy" data-editable="true">Ra mắt FineReport V3.0 và bước vào thị trường báo cáo web doanh nghiệp.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2008</p><h3 data-editable="true">FineReport V6.0</h3><p class="timeline-copy" data-editable="true">Nâng cấp mạnh về thiết kế và xử lý báo cáo, tạo chỗ đứng vững hơn.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2013</p><h3 data-editable="true">FineBI V1.0</h3><p class="timeline-copy" data-editable="true">Mở rộng sang self-service BI, từ đó hệ sinh thái không còn chỉ là reporting.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2015–2018</p><h3 data-editable="true">Tăng tốc tăng trưởng</h3><p class="timeline-copy" data-editable="true">Doanh thu vượt mốc 100 triệu NDT, hệ sinh thái phân tích tiếp tục hoàn thiện.</p></article>
-                    </div>
-                </div>
-                <div class="footer-note">History I</div>
-                <div class="slide-number">21</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="FineReport 2006-2018">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Lịch sử giai đoạn đầu</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">2006–2018: FanRuan xây vị thế từ web reporting sang hệ sinh thái BI rộng hơn</h2>
+<div class="timeline reveal delay-3">
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2006</p><h3 data-editable="true">FanRuan thành lập</h3><p class="timeline-copy" data-editable="true">Ra mắt FineReport V3.0 và bước vào thị trường báo cáo web doanh nghiệp.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2008</p><h3 data-editable="true">FineReport V6.0</h3><p class="timeline-copy" data-editable="true">Nâng cấp mạnh về thiết kế và xử lý báo cáo, tạo chỗ đứng vững hơn.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2013</p><h3 data-editable="true">FineBI V1.0</h3><p class="timeline-copy" data-editable="true">Mở rộng sang self-service BI, từ đó hệ sinh thái không còn chỉ là reporting.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2015–2018</p><h3 data-editable="true">Tăng tốc tăng trưởng</h3><p class="timeline-copy" data-editable="true">Doanh thu vượt mốc 100 triệu NDT, hệ sinh thái phân tích tiếp tục hoàn thiện.</p></article>
+</div>
+</div>
+<div class="footer-note">FineReport History (2006-2018)</div>
+<div class="slide-number">21</div>
+</section>
+<!-- ===========================================
                  === SLIDE 22 (Index 25): FineReport 2019-nay
                  =========================================== -->
-            <section class="slide" data-title="FineReport 2019-nay">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">22 / Lịch sử mở rộng</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">2019–nay: chuẩn hóa quốc tế, đa dạng hóa sản phẩm và chuyển dịch mạnh sang BI + AI</h2>
-                    <div class="timeline reveal delay-3">
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2019</p><h3 data-editable="true">Top 50 Big Data China</h3><p class="timeline-copy" data-editable="true">Khẳng định vị trí tại Trung Quốc và trở thành đối tác sớm của Huawei Cloud.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2020–2023</p><h3 data-editable="true">CMMI 5 &amp; mở rộng</h3><p class="timeline-copy" data-editable="true">Mở rộng FineDataLink, FineVis, Jiandao Cloud và duy trì vị thế dẫn đầu BI nội địa.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2024</p><h3 data-editable="true">Quy mô toàn cầu</h3><p class="timeline-copy" data-editable="true">Hơn 20 chi nhánh, hơn 2.000 nhân sự và hàng chục nghìn khách hàng doanh nghiệp.</p></article>
-                        <article class="card timeline-card"><p class="timeline-year" data-editable="true">2025–nay</p><h3 data-editable="true">BI + AI</h3><p class="timeline-copy" data-editable="true">Đẩy mạnh Dora AI và triết lý “lấy dữ liệu làm trung tâm, trí tuệ làm cánh bay”.</p></article>
-                    </div>
-                </div>
-                <div class="footer-note">History II</div>
-                <div class="slide-number">22</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="FineReport 2019-nay">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Lịch sử mở rộng</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">2019–nay: chuẩn hóa quốc tế, đa dạng hóa sản phẩm và chuyển dịch mạnh sang BI + AI</h2>
+<div class="timeline reveal delay-3">
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2019</p><h3 data-editable="true">Top 50 Big Data China</h3><p class="timeline-copy" data-editable="true">Khẳng định vị trí tại Trung Quốc và trở thành đối tác sớm của Huawei Cloud.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2020–2023</p><h3 data-editable="true">CMMI 5 &amp; mở rộng</h3><p class="timeline-copy" data-editable="true">Mở rộng FineDataLink, FineVis, Jiandao Cloud và duy trì vị thế dẫn đầu BI nội địa.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2024</p><h3 data-editable="true">Quy mô toàn cầu</h3><p class="timeline-copy" data-editable="true">Hơn 20 chi nhánh, hơn 2.000 nhân sự và hàng chục nghìn khách hàng doanh nghiệp.</p></article>
+<article class="card timeline-card"><p class="timeline-year" data-editable="true">2025–nay</p><h3 data-editable="true">BI + AI</h3><p class="timeline-copy" data-editable="true">Đẩy mạnh Dora AI và triết lý “lấy dữ liệu làm trung tâm, trí tuệ làm cánh bay”.</p></article>
+</div>
+</div>
+<div class="footer-note">FineReport History (2019-Present)</div>
+<div class="slide-number">22</div>
+</section>
+<!-- ===========================================
                  === SLIDE 23 (Index 26): Hệ sinh thái FanRuan
                  =========================================== -->
-            <section class="slide" data-title="Hệ sinh thái FanRuan">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">23 / Hệ sinh thái FanRuan</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">FineReport nằm trong một họ giải pháp phục vụ từ tích hợp dữ liệu đến trình bày và tác nhân AI</h2>
-                    <div class="content-grid grid-4 reveal delay-3">
-                        <article class="card"><h3 data-editable="true">FineDataLink</h3><p class="body-text" data-editable="true">Low-code integration, task scheduling, data governance và đồng bộ dữ liệu.</p></article>
-                        <article class="card"><h3 data-editable="true">FineVis</h3><p class="body-text" data-editable="true">Large-screen 3D storytelling, cockpit, big-screen operation center.</p></article>
-                        <article class="card"><h3 data-editable="true">Jiandao Cloud</h3><p class="body-text" data-editable="true">No-code app building, workflow approvals và ứng dụng nghiệp vụ cá nhân hóa.</p></article>
-                        <article class="card"><h3 data-editable="true">FineMobile / Dora AI</h3><p class="body-text" data-editable="true">Mobile BI, data interaction on field, cùng lớp trợ lý AI doanh nghiệp.</p></article>
-                    </div>
-                </div>
-                <div class="footer-note">FanRuan ecosystem</div>
-                <div class="slide-number">23</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Hệ sinh thái FanRuan">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Hệ sinh thái FanRuan</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">FineReport nằm trong một họ giải pháp phục vụ từ tích hợp dữ liệu đến trình bày và tác nhân AI</h2>
+<div class="content-grid grid-4 reveal delay-3">
+<article class="card"><h3 data-editable="true">FineDataLink</h3><p class="body-text" data-editable="true">Low-code integration, task scheduling, data governance và đồng bộ dữ liệu.</p></article>
+<article class="card"><h3 data-editable="true">FineVis</h3><p class="body-text" data-editable="true">Large-screen 3D storytelling, cockpit, big-screen operation center.</p></article>
+<article class="card"><h3 data-editable="true">Jiandao Cloud</h3><p class="body-text" data-editable="true">No-code app building, workflow approvals và ứng dụng nghiệp vụ cá nhân hóa.</p></article>
+<article class="card"><h3 data-editable="true">FineMobile / Dora AI</h3><p class="body-text" data-editable="true">Mobile BI, data interaction on field, cùng lớp trợ lý AI doanh nghiệp.</p></article>
+</div>
+</div>
+<div class="footer-note">FanRuan Ecosystem</div>
+<div class="slide-number">23</div>
+</section>
+<!-- ===========================================
                  === SLIDE 24 (Index 27): Cấu trúc Chức năng
                  =========================================== -->
-            <section class="slide" data-title="Cấu trúc Chức năng">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
-                    <p class="eyebrow reveal delay-1" data-editable="true">24 / Cấu trúc Chức năng</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">Cấu trúc Chức năng (Function Structure)</h2>
-                    <img src="assets/fr_func_structure.png" alt="FineReport Function Structure" class="reveal delay-3" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;">
-                </div>
-                <div class="footer-note">FineReport Architecture - Function Structure</div>
-                <div class="slide-number">24</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Cấu trúc Chức năng">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Cấu trúc Chức năng</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Cấu trúc Chức năng (Function Structure)</h2>
+<img alt="FineReport Function Structure" class="reveal delay-3" src="assets/fr_func_structure.png" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;"/>
+</div>
+<div class="footer-note">Function Structure Diagram</div>
+<div class="slide-number">24</div>
+</section>
+<!-- ===========================================
                  === SLIDE 25 (Index 28): Kiến trúc Kỹ thuật
                  =========================================== -->
-            <section class="slide" data-title="Kiến trúc Kỹ thuật">
-                <img class="tpl tpl-skyline-deep" src="assets/skyline-deep.png" alt="">
-                <img class="tpl tpl-wave-blue" src="assets/wave-blue.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
-                    <p class="eyebrow reveal delay-1" data-editable="true">25 / Kiến trúc Kỹ thuật</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">Kiến trúc Kỹ thuật (Technical Architecture)</h2>
-                    <img src="assets/fr_tech_architecture.jpg" alt="FineReport Technical Architecture" class="reveal delay-3" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;">
-                </div>
-                <div class="footer-note">FineReport Architecture - Technical Architecture</div>
-                <div class="slide-number">25</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kiến trúc Kỹ thuật">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Kiến trúc Kỹ thuật</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Kiến trúc Kỹ thuật (Technical Architecture)</h2>
+<img alt="FineReport Technical Architecture" class="reveal delay-3" src="assets/fr_tech_architecture.jpg" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;"/>
+</div>
+<div class="footer-note">Technical Architecture Diagram</div>
+<div class="slide-number">25</div>
+</section>
+<!-- ===========================================
                  === SLIDE 26 (Index 29): Kiến trúc Ứng dụng
                  =========================================== -->
-            <section class="slide" data-title="Kiến trúc Ứng dụng">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
-                    <p class="eyebrow reveal delay-1" data-editable="true">26 / Kiến trúc Ứng dụng</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">Kiến trúc Ứng dụng (Application Architecture)</h2>
-                    <img src="assets/fr_app_architecture.png" alt="FineReport Application Architecture" class="reveal delay-3" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;">
-                </div>
-                <div class="footer-note">FineReport Architecture - Application Architecture</div>
-                <div class="slide-number">26</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kiến trúc Ứng dụng">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner" style="display: flex; flex-direction: column; align-items: center;">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Kiến trúc Ứng dụng</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Kiến trúc Ứng dụng (Application Architecture)</h2>
+<img alt="FineReport Application Architecture" class="reveal delay-3" src="assets/fr_app_architecture.png" style="max-width: 85%; max-height: 580px; border-radius: 16px; box-shadow: var(--card-shadow); margin-top: 15px; border: 2px solid var(--hcmus-border); background: #ffffff; padding: 12px;"/>
+</div>
+<div class="footer-note">Application Architecture Diagram</div>
+<div class="slide-number">26</div>
+</section>
+<!-- ===========================================
                  === SLIDE 27 (Index 30): License & Pricing
                  =========================================== -->
-            <section class="slide" data-title="License & Pricing">
-                <img class="tpl tpl-skyline-deep" src="assets/skyline-deep.png" alt="">
-                <img class="tpl tpl-wave-blue" src="assets/wave-blue.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">Bản quyền &amp; Chi phí</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">Chính sách Bản quyền linh hoạt và Mô hình giá Thân thiện với Doanh nghiệp</h2>
-                    <div class="content-grid grid-2 reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Mô hình Chi phí</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Cá nhân / Học tập:</b> Miễn phí hoàn toàn, không giới hạn thời gian hay tính năng thiết kế báo cáo.</li>
-                                <li data-editable="true"><b>Doanh nghiệp (Enterprise):</b> Mô hình báo giá linh hoạt (Cần nhập biểu mẫu thông tin để nhận báo giá) tính theo quy mô triển khai và nhu cầu thực tế.</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Các hình thức Xác thực Bản quyền</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Local Machine Info AUTH:</b> Đăng ký cho máy chủ vật lý cố định dựa trên thông tin phần cứng (MAC/Machine Code), kích hoạt qua tệp <code>FanRuan.lic</code>.</li>
-                                <li data-editable="true"><b>Private Cloud AUTH:</b> Cấp phép cho môi trường ảo hóa / Đám mây (VMware, AWS) thông qua máy chủ bản quyền mạng nội bộ (License Server).</li>
-                                <li data-editable="true"><b>Container Private Cloud AUTH:</b> Cấp phép chuyên dụng cho hạ tầng đóng gói Docker / Kubernetes thông qua Container Authorization Image.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport - License & Pricing</div>
-                <div class="slide-number">27</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="License &amp; Pricing">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Bản quyền &amp; Chi phí</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Chính sách Bản quyền linh hoạt và Mô hình giá Thân thiện với Doanh nghiệp</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Mô hình Chi phí</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Cá nhân / Học tập:</b> Miễn phí hoàn toàn, không giới hạn thời gian hay tính năng thiết kế báo cáo.</li>
+<li data-editable="true"><b>Doanh nghiệp (Enterprise):</b> Mô hình báo giá linh hoạt (Cần nhập biểu mẫu thông tin để nhận báo giá) tính theo quy mô triển khai và nhu cầu thực tế.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Các hình thức Xác thực Bản quyền</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Local Machine Info AUTH:</b> Đăng ký cho máy chủ vật lý cố định dựa trên thông tin phần cứng (MAC/Machine Code), kích hoạt qua tệp <code>FanRuan.lic</code>.</li>
+<li data-editable="true"><b>Private Cloud AUTH:</b> Cấp phép cho môi trường ảo hóa / Đám mây (VMware, AWS) thông qua máy chủ bản quyền mạng nội bộ (License Server).</li>
+<li data-editable="true"><b>Container Private Cloud AUTH:</b> Cấp phép chuyên dụng cho hạ tầng đóng gói Docker / Kubernetes thông qua Container Authorization Image.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">License &amp; Pricing</div>
+<div class="slide-number">27</div>
+</section>
+<!-- ===========================================
                  === SLIDE 28 (Index 31): Feature 1 & 2
                  =========================================== -->
-            <section class="slide" data-title="Feature 1 & 2: Designer & Visualization">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">27 / Feature 1 &amp; 2</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">1. Flexible Report Designer &amp; 2. Diverse Visualization Types</h2>
-                    <div class="content-grid grid-2 reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Feature 1: Flexible Report Designer</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Thiết kế trực quan, Zero-code:</b> Tự tay kéo-thả (drag-and-drop) dữ liệu và biểu đồ để tạo báo cáo/dashboard phức tạp mà không cần viết code.</li>
-                                <li data-editable="true"><b>Chuẩn xác từng pixel (Pixel-Perfect):</b> Đáp ứng hoàn hảo các biểu mẫu báo cáo tài chính/doanh nghiệp cực kỳ phức tạp (nhiều cột, phân cấp, gộp ô).</li>
-                                <li data-editable="true"><b>Dashboard &amp; Tái sử dụng template:</b> Dễ dàng quản lý, lưu trữ và tái sử dụng các mẫu báo cáo (templates) linh hoạt trên toàn hệ thống.</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Feature 2: Diverse Visualization Types</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Biểu đồ phong phú &amp; Tự động làm mới:</b> Hơn 60 loại biểu đồ tích hợp sẵn, tự động làm mới số liệu theo thời gian thực (Chart Data Auto Refresh).</li>
-                                <li data-editable="true"><b>Trải nghiệm đa nền tảng:</b> Vận hành mượt mà trên thiết bị di động (Mobile Platform) và trình chiếu màn hình lớn (Big Screen Application).</li>
-                                <li data-editable="true"><b>Mở rộng không giới hạn (Plugins):</b> Dễ dàng tích hợp thêm các công cụ vẽ biểu đồ 3D chuyên sâu hoặc tính năng từ kho Plugins bên thứ ba.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport Features - 1 & 2</div>
-                <div class="slide-number">28</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Feature 1 &amp; 2: Designer &amp; Visualization">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Tính năng 1 &amp; 2</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">1. Thiết kế Báo cáo Linh hoạt &amp; 2. Trực quan hóa Đa dạng</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Tính năng 1: Thiết kế Báo cáo Linh hoạt</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Thiết kế trực quan, Zero-code:</b> Tự tay kéo-thả (drag-and-drop) dữ liệu và biểu đồ để tạo báo cáo/dashboard phức tạp mà không cần viết code.</li>
+<li data-editable="true"><b>Chuẩn xác từng pixel (Pixel-Perfect):</b> Đáp ứng hoàn hảo các biểu mẫu báo cáo tài chính/doanh nghiệp cực kỳ phức tạp (nhiều cột, phân cấp, gộp ô).</li>
+<li data-editable="true"><b>Dashboard &amp; Tái sử dụng template:</b> Dễ dàng quản lý, lưu trữ và tái sử dụng các mẫu báo cáo (templates) linh hoạt trên toàn hệ thống.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Tính năng 2: Trực quan hóa Đa dạng</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Biểu đồ phong phú &amp; Tự động làm mới:</b> Hơn 60 loại biểu đồ tích hợp sẵn, tự động làm mới số liệu theo thời gian thực (Chart Data Auto Refresh).</li>
+<li data-editable="true"><b>Trải nghiệm đa nền tảng:</b> Vận hành mượt mà trên thiết bị di động (Mobile Platform) và trình chiếu màn hình lớn (Big Screen Application).</li>
+<li data-editable="true"><b>Mở rộng không giới hạn (Plugins):</b> Dễ dàng tích hợp thêm các công cụ vẽ biểu đồ 3D chuyên sâu hoặc tính năng từ kho Plugins bên thứ ba.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">FineReport Features 1 &amp; 2</div>
+<div class="slide-number">28</div>
+</section>
+<!-- ===========================================
                  === SLIDE 29 (Index 32): Feature 3 & 4
                  =========================================== -->
-            <section class="slide" data-title="Feature 3 & 4: Analysis & Data Entry">
-                <img class="tpl tpl-skyline-deep" src="assets/skyline-deep.png" alt="">
-                <img class="tpl tpl-wave-blue" src="assets/wave-blue.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">28 / Feature 3 &amp; 4</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">3. Interactive Analysis &amp; 4. Data Entry</h2>
-                    <div class="content-grid grid-2 reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Feature 3: Interactive Analysis</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Truy vấn tham số (Parameter Application):</b> Người dùng chủ động tự lọc và khai phá dữ liệu tức thì mà không cần chờ đợi bộ phận IT.</li>
-                                <li data-editable="true"><b>Bộ lọc trực quan phong phú:</b> Cung cấp sẵn các widget như menu thả xuống, hộp chọn ngày, tìm kiếm văn bản và bộ lọc cây.</li>
-                                <li data-editable="true"><b>Liên kết &amp; Đào sâu đa chiều:</b> Hỗ trợ liên kết chéo biểu đồ (Cross-chart linkage) và đào sâu dữ liệu (Drill-down từ tổng quan đến chi tiết).</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Feature 4: Data Entry</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Thu thập &amp; Ghi ngược dữ liệu (Write-back):</b> Biến báo cáo tĩnh thành biểu mẫu thu thập dữ liệu động, nhập thông tin/tệp/ảnh ghi ngược về CSDL.</li>
-                                <li data-editable="true"><b>Nhập liệu di động linh hoạt:</b> Nhân viên dễ dàng thực hiện nhập liệu và cập nhật thông tin trực tiếp tại hiện trường qua thiết bị di động.</li>
-                                <li data-editable="true"><b>Quản lý luồng dữ liệu an toàn:</b> Kiểm soát dữ liệu nhập vào qua quy tắc kiểm tra tính hợp lệ (Validation) và phân quyền bảo mật chặt chẽ.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport Features - 3 & 4</div>
-                <div class="slide-number">29</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Feature 3 &amp; 4: Analysis &amp; Data Entry">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Tính năng 3 &amp; 4</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">3. Phân tích Tương tác &amp; 4. Nhập liệu Dữ liệu</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Tính năng 3: Phân tích Tương tác</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Truy vấn tham số (Parameter Application):</b> Người dùng chủ động tự lọc và khai phá dữ liệu tức thì mà không cần chờ đợi bộ phận IT.</li>
+<li data-editable="true"><b>Bộ lọc trực quan phong phú:</b> Cung cấp sẵn các widget như menu thả xuống, hộp chọn ngày, tìm kiếm văn bản và bộ lọc cây.</li>
+<li data-editable="true"><b>Liên kết &amp; Đào sâu đa chiều:</b> Hỗ trợ liên kết chéo biểu đồ (Cross-chart linkage) và đào sâu dữ liệu (Drill-down từ tổng quan đến chi tiết).</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Tính năng 4: Nhập liệu Dữ liệu</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Thu thập &amp; Ghi ngược dữ liệu (Write-back):</b> Biến báo cáo tĩnh thành biểu mẫu thu thập dữ liệu động, nhập thông tin/tệp/ảnh ghi ngược về CSDL.</li>
+<li data-editable="true"><b>Nhập liệu di động linh hoạt:</b> Nhân viên dễ dàng thực hiện nhập liệu và cập nhật thông tin trực tiếp tại hiện trường qua thiết bị di động.</li>
+<li data-editable="true"><b>Quản lý luồng dữ liệu an toàn:</b> Kiểm soát dữ liệu nhập vào qua quy tắc kiểm tra tính hợp lệ (Validation) và phân quyền bảo mật chặt chẽ.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">FineReport Features 3 &amp; 4</div>
+<div class="slide-number">29</div>
+</section>
+<!-- ===========================================
                  === SLIDE 30 (Index 33): Feature 5 & 6
                  =========================================== -->
-            <section class="slide" data-title="Feature 5 & 6: Deployment & Platform">
-                <img class="tpl tpl-skyline-light" src="assets/skyline-light.png" alt="">
-                <img class="tpl tpl-wave-orange" src="assets/wave-orange.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">29 / Feature 5 &amp; 6</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">5. Deployment &amp; Integration &amp; 6. Decision-Making Platform</h2>
-                    <div class="content-grid grid-2 reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Feature 5: Deployment &amp; Integration</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Triển khai máy chủ linh hoạt:</b> Vận hành toàn diện trên đa hệ điều hành (Windows, Linux, macOS) qua On-premise hoặc Private/Hybrid Cloud.</li>
-                                <li data-editable="true"><b>Tích hợp hệ thống &amp; SSO:</b> Nhúng báo cáo trực tiếp vào ERP, CRM, OA và hỗ trợ Đăng nhập một lần (Single Sign-On).</li>
-                                <li data-editable="true"><b>Phân quyền bảo mật đa cấp:</b> Bảo mật nghiêm ngặt qua User Permission Management và ủy quyền quản trị viên thứ cấp.</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Feature 6: Decision-Making Platform</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Cổng thông tin tập trung:</b> Quy tụ toàn bộ báo cáo và dashboard về một portal "một cửa" duy nhất với kiểm soát phân quyền theo vai trò.</li>
-                                <li data-editable="true"><b>Ủy quyền quản trị thứ cấp:</b> Phân rã quyền cho admin chi nhánh/phòng ban tự quản lý tài khoản và cấu hình báo cáo.</li>
-                                <li data-editable="true"><b>Giám sát vận hành &amp; App OEM:</b> Bộ chẩn đoán mã lỗi Error Code Summary và công cụ quản lý thương hiệu ứng dụng di động tập trung.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport Features - 5 & 6</div>
-                <div class="slide-number">30</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Feature 5 &amp; 6: Deployment &amp; Platform">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Tính năng 5 &amp; 6</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">5. Triển khai &amp; Tích hợp &amp; 6. Nền tảng Ra Quyết định</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Tính năng 5: Triển khai &amp; Tích hợp</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Triển khai máy chủ linh hoạt:</b> Vận hành toàn diện trên đa hệ điều hành (Windows, Linux, macOS) qua On-premise hoặc Private/Hybrid Cloud.</li>
+<li data-editable="true"><b>Tích hợp hệ thống &amp; SSO:</b> Nhúng báo cáo trực tiếp vào ERP, CRM, OA và hỗ trợ Đăng nhập một lần (Single Sign-On).</li>
+<li data-editable="true"><b>Phân quyền bảo mật đa cấp:</b> Bảo mật nghiêm ngặt qua User Permission Management và ủy quyền quản trị viên thứ cấp.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Tính năng 6: Nền tảng Ra Quyết định</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Cổng thông tin tập trung:</b> Quy tụ toàn bộ báo cáo và dashboard về một portal "một cửa" duy nhất với kiểm soát phân quyền theo vai trò.</li>
+<li data-editable="true"><b>Ủy quyền quản trị thứ cấp:</b> Phân rã quyền cho admin chi nhánh/phòng ban tự quản lý tài khoản và cấu hình báo cáo.</li>
+<li data-editable="true"><b>Giám sát vận hành &amp; App OEM:</b> Bộ chẩn đoán mã lỗi Error Code Summary và công cụ quản lý thương hiệu ứng dụng di động tập trung.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">FineReport Features 5 &amp; 6</div>
+<div class="slide-number">30</div>
+</section>
+<!-- ===========================================
                  === SLIDE 31 (Index 34): Feature 7 & 8
                  =========================================== -->
-            <section class="slide" data-title="Feature 7 & 8: Schedule & Export">
-                <img class="tpl tpl-skyline-deep" src="assets/skyline-deep.png" alt="">
-                <img class="tpl tpl-wave-blue" src="assets/wave-blue.png" alt="">
-                <img class="tpl tpl-corner" src="assets/corner-tall.png" alt="">
-                <img class="logo-small" src="assets/logo-small.png" alt="HCMUS logo">
-                <div class="slide-inner">
-                    <p class="eyebrow reveal delay-1" data-editable="true">30 / Feature 7 &amp; 8</p>
-                    <h2 class="slide-title reveal delay-2" data-editable="true">7. Task Schedule &amp; 8. Report Export &amp; Printing</h2>
-                    <div class="content-grid grid-2 reveal delay-3">
-                        <article class="card">
-                            <div class="accent-pill">Feature 7: Task Schedule</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Tự động hóa cập nhật dữ liệu:</b> Tự động làm mới số liệu biểu đồ theo thời gian thực, loại bỏ hoàn toàn việc chốt số thủ công cuối kỳ.</li>
-                                <li data-editable="true"><b>Phân phối tác vụ tập trung:</b> Quản lý lịch trình xuất bản và tự động gửi báo cáo định kỳ đến nhân sự qua Email hoặc ứng dụng di động.</li>
-                            </ul>
-                        </article>
-                        <article class="card">
-                            <div class="accent-pill">Feature 8: Report Export &amp; Printing</div>
-                            <ul class="bullet-list">
-                                <li data-editable="true"><b>Xuất bản đa dạng định dạng:</b> Đóng gói và xuất dữ liệu ra Excel (giữ nguyên công thức), Word (nhúng biểu đồ) hoặc PDF.</li>
-                                <li data-editable="true"><b>Tối ưu hiển thị trước khi in:</b> Tự động căn chỉnh lề, tỷ lệ thu phóng và khổ giấy vật lý nhờ bộ giải quyết sự cố Adaptive Problems Summary.</li>
-                                <li data-editable="true"><b>Mở rộng in ấn qua Plugins:</b> Bổ sung tính năng in ấn nâng cao, xuất tệp đặc thù và quét mã vạch phục vụ kho vận &amp; Logistics.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div class="footer-note">FineReport Features - 7 & 8</div>
-                <div class="slide-number">31</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Feature 7 &amp; 8: Schedule &amp; Export">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần III / Tính năng 7 &amp; 8</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">7. Lập lịch Tác vụ &amp; 8. Xuất bản &amp; In ấn Báo cáo</h2>
+<div class="content-grid grid-2 reveal delay-3">
+<article class="card">
+<div class="accent-pill">Tính năng 7: Lập lịch Tác vụ</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Tự động hóa cập nhật dữ liệu:</b> Tự động làm mới số liệu biểu đồ theo thời gian thực, loại bỏ hoàn toàn việc chốt số thủ công cuối kỳ.</li>
+<li data-editable="true"><b>Phân phối tác vụ tập trung:</b> Quản lý lịch trình xuất bản và tự động gửi báo cáo định kỳ đến nhân sự qua Email hoặc ứng dụng di động.</li>
+</ul>
+</article>
+<article class="card">
+<div class="accent-pill">Tính năng 8: Xuất bản &amp; In ấn Báo cáo</div>
+<ul class="bullet-list">
+<li data-editable="true"><b>Xuất bản đa dạng định dạng:</b> Đóng gói và xuất dữ liệu ra Excel (giữ nguyên công thức), Word (nhúng biểu đồ) hoặc PDF.</li>
+<li data-editable="true"><b>Tối ưu hiển thị trước khi in:</b> Tự động căn chỉnh lề, tỷ lệ thu phóng và khổ giấy vật lý nhờ bộ giải quyết sự cố Adaptive Problems Summary.</li>
+<li data-editable="true"><b>Mở rộng in ấn qua Plugins:</b> Bổ sung tính năng in ấn nâng cao, xuất tệp đặc thù và quét mã vạch phục vụ kho vận &amp; Logistics.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="footer-note">FineReport Features 7 &amp; 8</div>
+<div class="slide-number">31</div>
+</section>
+<!-- ===========================================
                  === SLIDE 32 (Main 32): Nguyên tắc chọn công cụ
                  =========================================== -->
-            <section class="slide" data-title="Nguyên tắc chọn công cụ">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Chọn công cụ nào?</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Nếu tách đúng lớp bài toán, việc chọn RapidMiner hay FineReport sẽ trở nên rất rõ ràng</h2>
-                <div class="matrix-grid reveal delay-3">
-                <article class="card"><h3 data-editable="true">Ưu tiên RapidMiner khi...</h3><p class="body-text" data-editable="true">Bài toán thiên về chuẩn bị dữ liệu, workflow ML, scoring, AutoML, experimentation hoặc tích hợp mô hình dự báo vào hệ thống.</p></article>
-                <article class="card"><h3 data-editable="true">Ưu tiên FineReport khi...</h3><p class="body-text" data-editable="true">Bài toán thiên về báo cáo quản trị, dashboard, data entry, role-based portal hoặc phân phối dữ liệu tới người dùng nghiệp vụ.</p></article>
-                <article class="card"><h3 data-editable="true">Điểm mạnh khi kết hợp</h3><p class="body-text" data-editable="true">RapidMiner sản xuất insight, FineReport đóng gói và lan truyền insight tới đúng nơi ra quyết định.</p></article>
-                <article class="card"><h3 data-editable="true">Thông điệp seminar</h3><p class="body-text" data-editable="true">Hai công cụ này không loại trừ nhau; chúng đại diện cho hai mắt xích bổ sung trong hệ Big Data hiện đại.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Decision guide</div>
-                <div class="slide-number">32</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Nguyên tắc chọn công cụ">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png">
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png">
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Chọn công cụ nào?</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Nếu tách đúng lớp bài toán, việc chọn RapidMiner hay FineReport sẽ trở nên rất rõ ràng</h2>
+<div class="matrix-grid reveal delay-3">
+<article class="card"><h3 data-editable="true">Ưu tiên RapidMiner khi...</h3><p class="body-text" data-editable="true">Bài toán thiên về chuẩn bị dữ liệu, workflow ML, scoring, AutoML, experimentation hoặc tích hợp mô hình dự báo vào hệ thống.</p></article>
+<article class="card"><h3 data-editable="true">Ưu tiên FineReport khi...</h3><p class="body-text" data-editable="true">Bài toán thiên về báo cáo quản trị, dashboard, data entry, role-based portal hoặc phân phối dữ liệu tới người dùng nghiệp vụ.</p></article>
+<article class="card"><h3 data-editable="true">Điểm mạnh khi kết hợp</h3><p class="body-text" data-editable="true">RapidMiner sản xuất insight, FineReport đóng gói và lan truyền insight tới đúng nơi ra quyết định.</p></article>
+<article class="card"><h3 data-editable="true">Thông điệp seminar</h3><p class="body-text" data-editable="true">Hai công cụ này không loại trừ nhau; chúng đại diện cho hai mắt xích bổ sung trong hệ Big Data hiện đại.</p></article>
+</div>
+</div>
+<div class="footer-note">Decision Guide</div>
+<div class="slide-number">32</div>
+</img></img></img></img></section>
+<!-- ===========================================
                  === SLIDE 33 (Main 33): Kịch bản demo
                  =========================================== -->
-            <section class="slide" data-title="Kịch bản demo">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Demo ứng dụng</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Ba kịch bản minh họa rõ nhất việc phối hợp giữa phân tích và trình bày dữ liệu</h2>
-                <div class="demo-grid reveal delay-3">
-                <article class="card"><div class="badge">A</div><h3 data-editable="true">Demand Forecasting</h3><p class="body-text" data-editable="true">RapidMiner xử lý dữ liệu lịch sử và tạo mô hình dự báo; FineReport biến đầu ra thành dashboard cho nhà quản lý chuỗi cung ứng.</p></article>
-                <article class="card"><div class="badge">B</div><h3 data-editable="true">Operational Monitoring</h3><p class="body-text" data-editable="true">FineReport hiển thị KPI và cảnh báo; RapidMiner bổ sung scoring rủi ro hoặc anomaly detection ở phía sau.</p></article>
-                <article class="card"><div class="badge">C</div><h3 data-editable="true">Feedback Loop</h3><p class="body-text" data-editable="true">FineReport thu thập dữ liệu write-back từ biểu mẫu; RapidMiner dùng dữ liệu mới để retrain mô hình theo chu kỳ.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Demo scenarios</div>
-                <div class="slide-number">33</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kịch bản demo">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png">
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png">
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Use case</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Ba kịch bản minh họa rõ nhất việc phối hợp giữa phân tích và trình bày dữ liệu</h2>
+<div class="demo-grid reveal delay-3">
+<article class="card"><div class="badge">A</div><h3 data-editable="true">Demand Forecasting</h3><p class="body-text" data-editable="true">RapidMiner xử lý dữ liệu lịch sử và tạo mô hình dự báo; FineReport biến đầu ra thành dashboard cho nhà quản lý chuỗi cung ứng.</p></article>
+<article class="card"><div class="badge">B</div><h3 data-editable="true">Operational Monitoring</h3><p class="body-text" data-editable="true">FineReport hiển thị KPI và cảnh báo; RapidMiner bổ sung scoring rủi ro hoặc anomaly detection ở phía sau.</p></article>
+<article class="card"><div class="badge">C</div><h3 data-editable="true">Feedback Loop</h3><p class="body-text" data-editable="true">FineReport thu thập dữ liệu write-back từ biểu mẫu; RapidMiner dùng dữ liệu mới để retrain mô hình theo chu kỳ.</p></article>
+</div>
+</div>
+<div class="footer-note">Demo Scenarios</div>
+<div class="slide-number">33</div>
+</img></img></img></img></section>
+<!-- ===========================================
                  === SLIDE 34 (Main 34): Chuỗi giá trị tích hợp
                  =========================================== -->
-            <section class="slide" data-title="Chuỗi giá trị tích hợp">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần I / Cách nhìn tích hợp</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">Khi ghép đúng vai trò, RapidMiner và FineReport tạo thành một pipeline giá trị hoàn chỉnh</h2>
-                <div class="summary-band reveal delay-3">
-                <article class="card"><div class="accent-pill">Bước 1</div><h3 data-editable="true">Nạp &amp; xử lý dữ liệu</h3><p class="body-text" data-editable="true">RapidMiner đọc nhiều nguồn dữ liệu, làm sạch, biến đổi và chuẩn bị đặc trưng cho bài toán phân tích.</p></article>
-                <article class="card"><div class="accent-pill">Bước 2</div><h3 data-editable="true">Tạo insight / dự báo</h3><p class="body-text" data-editable="true">Workflow ML, AutoML và scoring của RapidMiner biến dữ liệu thành mô hình hoặc kết quả dự báo sử dụng được.</p></article>
-                <article class="card"><div class="accent-pill">Bước 3</div><h3 data-editable="true">Phân phối &amp; hành động</h3><p class="body-text" data-editable="true">FineReport biến insight thành dashboard, portal, biểu mẫu phản hồi và báo cáo tới lớp quản trị.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Value chain</div>
-                <div class="slide-number">34</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Chuỗi giá trị tích hợp">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png">
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png">
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Cách nhìn tích hợp</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">Khi ghép đúng vai trò, RapidMiner và FineReport tạo thành một pipeline giá trị hoàn chỉnh</h2>
+<div class="summary-band reveal delay-3">
+<article class="card"><div class="accent-pill">Bước 1</div><h3 data-editable="true">Nạp &amp; xử lý dữ liệu</h3><p class="body-text" data-editable="true">RapidMiner đọc nhiều nguồn dữ liệu, làm sạch, biến đổi và chuẩn bị đặc trưng cho bài toán phân tích.</p></article>
+<article class="card"><div class="accent-pill">Bước 2</div><h3 data-editable="true">Tạo insight / dự báo</h3><p class="body-text" data-editable="true">Workflow ML, AutoML và scoring của RapidMiner biến dữ liệu thành mô hình hoặc kết quả dự báo sử dụng được.</p></article>
+<article class="card"><div class="accent-pill">Bước 3</div><h3 data-editable="true">Phân phối &amp; hành động</h3><p class="body-text" data-editable="true">FineReport biến insight thành dashboard, portal, biểu mẫu phản hồi và báo cáo tới lớp quản trị.</p></article>
+</div>
+</div>
+<div class="footer-note">Integrated Value Chain</div>
+<div class="slide-number">34</div>
+</img></img></img></img></section>
+<!-- ===========================================
                  === SLIDE 35 (Main 35): Kết luận
                  =========================================== -->
-            <section class="slide" data-title="Kết luận">
-                <img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png"/>
-                <img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png"/>
-                <div class="slide-inner">
-                <p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Kết luận chính</p>
-                <h2 class="slide-title reveal delay-2" data-editable="true">RapidMiner mạnh ở “tạo insight từ dữ liệu”, còn FineReport mạnh ở “đưa insight thành hành động trong doanh nghiệp”</h2>
-                <div class="summary-band reveal delay-3">
-                <article class="card"><h3 data-editable="true">RapidMiner</h3><p class="body-text" data-editable="true">Workflow DSML, AutoML, extensibility bằng code và khả năng tiến vào hạ tầng MLOps qua AI Hub.</p></article>
-                <article class="card"><h3 data-editable="true">FineReport</h3><p class="body-text" data-editable="true">Reporting, dashboard, write-back, scheduling, mobile BI và cổng dữ liệu phân quyền cho tổ chức.</p></article>
-                <article class="card"><h3 data-editable="true">Giá trị khi ghép</h3><p class="body-text" data-editable="true">Một nền tảng tối ưu lớp phân tích; một nền tảng tối ưu lớp giao tiếp và vận hành dữ liệu.</p></article>
-                </div>
-                </div>
-                <div class="footer-note">Conclusion</div>
-                <div class="slide-number">35</div>
-            </section>
-
-            <!-- ===========================================
+<section class="slide" data-title="Kết luận">
+<img alt="" class="tpl tpl-skyline-deep" src="assets/skyline-deep.png">
+<img alt="" class="tpl tpl-wave-blue" src="assets/wave-blue.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small" src="assets/logo-small.png">
+<div class="slide-inner">
+<p class="eyebrow reveal delay-1" data-editable="true">Phần IV / Kết luận chính</p>
+<h2 class="slide-title reveal delay-2" data-editable="true">RapidMiner mạnh ở “tạo insight từ dữ liệu”, còn FineReport mạnh ở “đưa insight thành hành động trong doanh nghiệp”</h2>
+<div class="summary-band reveal delay-3">
+<article class="card"><h3 data-editable="true">RapidMiner</h3><p class="body-text" data-editable="true">Workflow DSML, AutoML, extensibility bằng code và khả năng tiến vào hạ tầng MLOps qua AI Hub.</p></article>
+<article class="card"><h3 data-editable="true">FineReport</h3><p class="body-text" data-editable="true">Reporting, dashboard, write-back, scheduling, mobile BI và cổng dữ liệu phân quyền cho tổ chức.</p></article>
+<article class="card"><h3 data-editable="true">Giá trị khi ghép</h3><p class="body-text" data-editable="true">Một nền tảng tối ưu lớp phân tích; một nền tảng tối ưu lớp giao tiếp và vận hành dữ liệu.</p></article>
+</div>
+</div>
+<div class="footer-note">Key Conclusion</div>
+<div class="slide-number">35</div>
+</img></img></img></img></section>
+<!-- ===========================================
                  === SLIDE 36 (Main 36): Cảm ơn
                  =========================================== -->
-            <section class="slide" data-title="Cảm ơn">
-                <img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png"/>
-                <img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png"/>
-                <img alt="" class="tpl tpl-corner" src="assets/corner-tall.png"/>
-                <img alt="HCMUS logo" class="logo-small-centered" src="assets/logo-small.png"/>
-                <div class="slide-inner closing-inner">
-                <div class="quote-line reveal delay-1"></div>
-                <h2 class="hero-title reveal delay-2" data-editable="true">Cảm ơn thầy cô và các bạn đã lắng nghe</h2>
-                <p class="lead reveal delay-3" data-editable="true">Nếu cần triển khai thực tế, cách tiếp cận hiệu quả nhất thường là để RapidMiner phụ trách lớp phân tích và FineReport phụ trách lớp vận hành báo cáo / dashboard.</p>
-                <p class="tagline reveal delay-4" data-editable="true">Q&amp;A — thảo luận thêm về kiến trúc, use case hoặc giới hạn trải nghiệm thực tế.</p>
-                </div>
-                <div class="footer-note">Thank you</div>
-                <div class="slide-number">36</div>
-            </section>
-
-        </main>
-    </div>
-
-    <nav class="deck-controls" aria-label="Điều hướng slide">
-        <div class="deck-controls-chip">
-            <span class="deck-controls-dot"></span>
-            <span id="progressText">01 / 36 — Mở đầu</span>
-        </div>
-    </nav>
-
-    <script>
+<section class="slide" data-title="Cảm ơn">
+<img alt="" class="tpl tpl-skyline-light" src="assets/skyline-light.png">
+<img alt="" class="tpl tpl-wave-orange" src="assets/wave-orange.png">
+<img alt="" class="tpl tpl-corner" src="assets/corner-tall.png">
+<img alt="HCMUS logo" class="logo-small-centered" src="assets/logo-small.png">
+<div class="slide-inner closing-inner">
+<div class="quote-line reveal delay-1"></div>
+<h2 class="hero-title reveal delay-2" data-editable="true">Cảm ơn thầy cô và các bạn đã lắng nghe</h2>
+<p class="lead reveal delay-3" data-editable="true">Nếu cần triển khai thực tế, cách tiếp cận hiệu quả nhất thường là để RapidMiner phụ trách lớp phân tích và FineReport phụ trách lớp vận hành báo cáo / dashboard.</p>
+<p class="tagline reveal delay-4" data-editable="true">Q&amp;A — thảo luận thêm về kiến trúc, use case hoặc giới hạn trải nghiệm thực tế.</p>
+</div>
+<div class="footer-note">Thank You</div>
+<div class="slide-number">36</div>
+</img></img></img></img></section>
+</main>
+</div>
+<nav aria-label="Điều hướng slide" class="deck-controls">
+<div class="deck-controls-chip">
+<span class="deck-controls-dot"></span>
+<span id="progressText">01 / 36 — Mở đầu</span>
+</div>
+</nav>
+<script>
         /* ===========================================
            === SLIDE PRESENTATION CONTROLLER ===
            Handles stage scaling, keyboard, wheel and touch navigation.
